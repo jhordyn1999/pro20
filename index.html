@@ -1,0 +1,1735 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pro20 | Home </title>
+</head>
+
+<body>
+    <div id="app">
+
+
+        <header>
+            <nav>
+                <div class="logo-index-pro20">
+                    <img src="img-pro20/icono-salir.svg" @click="changueMenuSalir()" id="btnSalir" class="icono-salir"
+                        width="45px" height="45px" alt="">
+                    <img src="img-pro20/icono-menu.svg" @click="changueMenu()" id="btnMenu" class="icono-menu" alt="">
+                    <a href="#" class="img-logo"><img src="img-pro20/PRO20.svg" height="25px" width="100px" alt=""> </a>
+                </div>
+                <ul id="divMenu">
+                    <li><a @click="changueItemMenu('Lineas')" href="#lineas-index-pro20"> Lineas de negocio<span
+                                id="idLineas" class="linea linea-activa"></span></a></li>
+                    <li><a @click="changueItemMenu('Nosotros')" href="#nosotros-index-pro20">Nosotros <span
+                                id="idNosotros" class="linea"></span></a></li>
+                    <li><a href="bolsatrabajo.html">Trabaja con nosotros</a></li>
+                    <li><a @click="changueItemMenu('Contacto')" href="#contactanos-index-pro20">Contáctanos <span
+                                id="idContactanos" class="linea"></span></a></li>
+                    <li><a href="#">
+                            <div id="icono-linkedin-pro20"></div>
+                        </a>
+                        <a href="">
+                            <div id="icono-facebook-pro20"></div>
+                        </a>
+                        <a href="">
+                            <div id="icono-twiter-pro20"></div>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <div class="pantalla-principal-index-pro20" id="lineas-index-pro20">
+            <div class="gridlineas-index-pro20">
+                <!-- ************ ITEM N°1 **************-->
+                <div class="itemlineas-index-pro20" id="itemLinea1">
+                    <div class="linea-index-pro20" id="linea1-fondo"></div>
+
+                    <div class="card-lineas-index-pro20 ">
+                        <div class="card-header">
+                            <img src="img-pro20/audiovisual.PNG" id="idLinea1" class="plomeado" alt="">
+                        </div>
+                        <div class="card-body" id="card-body1">
+                            <div class="card-body-title">
+                                <span class="circulo-rosa-index-pro20">&nbsp;</span>
+                                <h4>Audiovisual</h4>
+                            </div>
+                            <div class="card-body-text">
+                                <p>www.cinecorporativo.com</p>
+                                <a href="">
+                                    <div id="icono-derecha"></div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- ************ ITEM N°2 **************-->
+                <div class="itemlineas-index-pro20" id="itemLinea2">
+                    <div class="linea-index-pro20"></div>
+                    <div class="card-lineas-index-pro20">
+                        <div class="card-header">
+                            <img src="img-pro20/learning.PNG" id="idLinea2" class="plomeado" alt="">
+                        </div>
+                        <div class="card-body" id="card-body2">
+                            <div class="card-body-title">
+                                <span class="circulo-rosa-index-pro20">&nbsp;</span>
+                                <h4>E-learning</h4>
+                            </div>
+                            <div class="card-body-text">
+                                <p>www.daktico.com</p>
+                                <a href="">
+                                    <div id="icono-derecha"></div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- ************ ITEM N°3 **************-->
+                <div class="itemlineas-index-pro20" id="itemLinea3">
+                    <div class="linea-index-pro20"></div>
+                    <div class="card-lineas-index-pro20">
+                        <div class="card-header">
+                            <img src="img-pro20/desarrollo.PNG" id="idLinea3" class="plomeado" alt="">
+                        </div>
+                        <div class="card-body" id="card-body3">
+                            <div class="card-body-title">
+                                <span class="circulo-rosa-index-pro20">&nbsp;</span>
+                                <h4>Desarrollo</h4>
+                            </div>
+                            <div class="card-body-text">
+                                <p>www.sitioweb.com</p>
+                                <a href="">
+                                    <div id="icono-derecha"></div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- ************ ITEM N°4 **************-->
+                <div class="itemlineas-index-pro20" id="itemLinea4">
+                    <div class="linea-index-pro20"></div>
+                    <div class="card-lineas-index-pro20">
+                        <div class="card-header">
+                            <img src="img-pro20/marketing.PNG" id="idLinea4" class="plomeado" alt="">
+                        </div>
+                        <div class="card-body" id="card-body4">
+                            <div class="card-body-title">
+                                <div class="circulo-rosa-index-pro20">&nbsp;</div>
+                                <h4>Publicidad y marketing digital</h4>
+                            </div>
+                            <div class="card-body-text">
+                                <p>www.cinecorporativo.com</p>
+                                <a href="">
+                                    <div id="icono-derecha"></div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <section class="seccion-nosotros-index-pro20" id="nosotros-index-pro20">
+            <div style="position: absolute; z-index: -1; width: 100%; text-align: center; display: flex;">
+                <div class="img-none"> <img src="img-pro20/fondo-nosotros.svg" style="    padding-top: 50px;
+                padding-left: 300px;" width="180px" height="180px" alt=""></div>
+                <div class="img-movil-nosotros"> <img src="img-pro20/fondo-nosotros.svg" style="padding-left: 10px;"
+                        width="560px" height="560px" alt="">
+                </div>
+
+            </div>
+            <div class="banner-nosotros-index-pro20">
+                <div class="textnosotros-titulo-index-pro20"> <span>Nosotros</span></div>
+                <div class="textnosotros-descripcion-index-pro20"> <span>"HACEMOS MAGIA CON LOS DESAFIOS <br>
+                        QUE NOS CONFÍAN, Y LA SATISFACCIÓN <br>
+                        DE NUESTROS CLIENTES <br>
+                        NOS RESPALDA."</span></div>
+            </div>
+        </section>
+
+        <section class="seccion-valores-index-pro20" id="seccion-valores">
+            <div class="gridvalores-index-pro20" id="grid-valores">
+                <div class="itemvalores-index-pro20">
+                    <div class="textnuestros-index-pro20"><span>Nuestros</span></div>
+                    <div class="textvalores-index-pro20"><span>Valores</span></div>
+                    <div class="textvalores-descripcion-index-pro20"><span>Fomentamos la cultura de excelencia,
+                            enfocándonos
+                            en la confiabilidad y el trabajo en equipo. </span></div>
+                </div>
+                <div class="itemvalores-index-pro20">
+
+
+                    <div class="slider">
+
+                        <div class="slides" id="idslider">
+                            <div id="slide1" >
+
+                                <div class="gridslider-valores-index-pro20">
+
+                                    <div class="grupoimg-txt-valores-index-pro20">
+                                        <img class="img-circular" style="opacity: 1 !important; margin-left: 10px;"
+                                            src="img-pro20/honestidad2.svg" width="180px" height="180px" alt="">
+                                        <div class="titulo-valorslider-index-pro20">
+                                            <span>"Honestidad"</span>
+                                        </div>
+                                    </div>
+                                    <div class="text1slider-valores-index-pro20"> Nos relacionamos con honestidad y
+                                        veracidad con nuestros clientes y colaboradores.</div>
+
+                                </div>
+                            </div>
+                            <div id="slide2">
+
+                                <div class="gridslider-valores-index-pro20">
+                                    <div class="grupoimg-txt-valores-index-pro20">
+                                        <img class="img-circular" style="opacity: 1 !important; margin-left: 10px;"
+                                            src="img-pro20/confianza2.svg" width="180px" height="180px" alt="">
+                                        <div class="titulo-valorslider-index-pro20">
+                                            <span>"Confianza"</span>
+                                        </div>
+                                    </div>
+                                    <div class="text1slider-valores-index-pro20"> Cumplimos con nuestras promesas y
+                                        acuerdos a todo nivel</div>
+                                </div>
+                            </div>
+
+                            <div id="slide3">
+
+                                <div class="gridslider-valores-index-pro20">
+                                    <div class="grupoimg-txt-valores-index-pro20">
+                                        <img class="img-circular" style="opacity: 1 !important; margin-left: 10px;"
+                                            src="img-pro20/etica2.svg" width="180px" height="180px" alt="">
+                                        <div class="titulo-valorslider-index-pro20">
+                                            <span>"Ética"</span>
+                                        </div>
+                                    </div>
+                                    <div class="text1slider-valores-index-pro20"> Respetamos los procesos,
+                                        procedimientos, normas y leyes a todo nivel, Actuando siempre con
+                                        profesionalismo e integridad.</div>
+                                </div>
+
+                            </div>
+                            <div id="slide4">
+
+                                <div class="gridslider-valores-index-pro20">
+                                    <div class="grupoimg-txt-valores-index-pro20">
+                                        <img class="img-circular" style="opacity: 1 !important; margin-left: 10px;"
+                                            src="img-pro20/seguridad2.svg" width="180px" height="180px" alt="">
+                                        <div class="titulo-valorslider-index-pro20">
+                                            <span>"Seguridad"</span>
+                                        </div>
+                                    </div>
+                                    <div class="text1slider-valores-index-pro20"> Priorizamos el bienestar de las
+                                        personas, por eso actuamos con cuidado, buscando mitigar los riesgos y
+                                        peligros.</div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="itemslider-index-pro20" style="display: none;">
+                        <a @click="changueSlider('sld1')" id="sld1" href="#slide1"></a>
+                        <a @click="changueSlider('sld2')" id="sld2" href="#slide2"></a>
+                        <a @click="changueSlider('sld3')" id="sld3" href="#slide3"></a>
+                        <a @click="changueSlider('sld4')" id="sld4" href="#slide4"></a>
+
+                    </div>
+                </div>
+
+
+
+            </div>
+
+        </section>
+        <section class="seccion-team-index-pro20">
+            <div class="titulo-centrado">
+                <div><span style="color: #4B71FC;">Team</span> <img src="img-pro20/pro20.PNG" width="70px" height="20px"
+                        alt=""></div>
+            </div>
+            <div class="grupo-team-index-pro20">
+                <div class="subgrupo1-team-index-pro20">
+                    <div class="item-team-index-pro20 ">
+                        <div>
+                            <img src="img-pro20/fondo-nosotros.svg" class="fondoitemteam-index-pro20" alt="">
+                        </div>
+                        <img class="img-circular plomeado" src="team-img/DanielAguinaga.jpg" width="170px"
+                            height="170px" alt="">
+                        <div class="cuerpoitem-team-index-pro20">
+                            <span class="nombre-team-index-pro20">Daniel Aguinaga G.</span> <br>
+                            <span class="cargo-team-index-pro20">Productor, Director general</span>
+                        </div>
+                    </div>
+                    <div class="item-team-index-pro20 ">
+                        <div>
+                            <img src="img-pro20/fondo-nosotros.svg" class="fondoitemteam-index-pro20" alt="">
+                        </div>
+                        <img class="img-circular plomeado" src="team-img/Lesly-Corrales.jpg" width="170px"
+                            height="170px" alt="">
+                        <div class="cuerpoitem-team-index-pro20">
+                            <span class="nombre-team-index-pro20">Lesly Coral G.</span> <br>
+                            <span class="cargo-team-index-pro20">Directora de comercial y de operaciones</span>
+                        </div>
+                    </div>
+                    <div class="item-team-index-pro20 ">
+                        <div>
+                            <img src="img-pro20/fondo-nosotros.svg" class="fondoitemteam-index-pro20" alt="">
+                        </div>
+                        <img class="img-circular plomeado" src="img-pro20/logo.PNG" width="170px" height="170px" alt="">
+                        <div class="cuerpoitem-team-index-pro20">
+                            <span class="nombre-team-index-pro20">Silvia C. Gutierrez</span> <br>
+                            <span class="cargo-team-index-pro20">Administradora</span>
+                        </div>
+                    </div>
+                    <div class="item-team-index-pro20 ">
+                        <div>
+                            <img src="img-pro20/fondo-nosotros.svg" class="fondoitemteam-index-pro20" alt="">
+                        </div>
+                        <img class="img-circular plomeado" src="team-img/Max-Ramirez.jpg" width="170px" height="170px"
+                            alt="">
+                        <div class="cuerpoitem-team-index-pro20">
+                            <span class="nombre-team-index-pro20">Max Ramirez C.</span> <br>
+                            <span class="cargo-team-index-pro20">Coordinador de Proyectos</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="subgrupo2-team-index-pro20">
+                    <div class="item-team-index-pro20">
+                        <div>
+                            <img src="img-pro20/fondo-nosotros.svg" class="fondoitemteam-index-pro20" alt="">
+                        </div>
+                        <img class="img-circular plomeado" src="team-img/Eunice-Diaz.png" width="170px" height="170px"
+                            alt="">
+                        <div class="cuerpoitem-team-index-pro20">
+                            <span class="nombre-team-index-pro20">Eunice Díaz</span> <br>
+                            <span class="cargo-team-index-pro20">Directora de arte</span>
+                        </div>
+                    </div>
+                    <div class="item-team-index-pro20 ">
+                        <div>
+                            <img src="img-pro20/fondo-nosotros.svg" class="fondoitemteam-index-pro20" alt="">
+                        </div>
+                        <img class="img-circular plomeado" src="team-img/Irvin-Ortiz.jpg" width="170px" height="170px"
+                            alt="">
+                        <div class="cuerpoitem-team-index-pro20">
+                            <span class="nombre-team-index-pro20">Irving Ortiz</span> <br>
+                            <span class="cargo-team-index-pro20">Realizador audiovisual</span>
+                        </div>
+                    </div>
+                    <div class="item-team-index-pro20 ">
+                        <div>
+                            <img src="img-pro20/fondo-nosotros.svg" class="fondoitemteam-index-pro20" alt="">
+                        </div>
+                        <img class="img-circular plomeado" src="team-img/Viviana-Quispe.jpg" width="170px"
+                            height="170px" alt="">
+                        <div class="cuerpoitem-team-index-pro20">
+                            <span class="nombre-team-index-pro20">Viviana Quispe</span> <br>
+                            <span class="cargo-team-index-pro20">Postproductora</span>
+                        </div>
+                    </div>
+                    <div class="item-team-index-pro20 ">
+                        <div>
+                            <img src="img-pro20/fondo-nosotros.svg" class="fondoitemteam-index-pro20" alt="">
+                        </div>
+                        <img class="img-circular plomeado" src="img-pro20/logo.PNG" width="170px" height="170px" alt="">
+                        <div class="cuerpoitem-team-index-pro20">
+                            <span class="nombre-team-index-pro20">Gustavo Aquino</span> <br>
+                            <span class="cargo-team-index-pro20">Desarrollador</span>
+                        </div>
+                    </div>
+                    <div class="item-team-index-pro20 ">
+                        <div>
+                            <img src="img-pro20/fondo-nosotros.svg" class="fondoitemteam-index-pro20" alt="">
+                        </div>
+                        <img class="img-circular plomeado" src="team-img/Peter-Solis.jpg" width="170px" height="170px"
+                            alt="">
+                        <div class="cuerpoitem-team-index-pro20">
+                            <span class="nombre-team-index-pro20">Peter Soliz</span> <br>
+                            <span class="cargo-team-index-pro20">Desarrollador</span>
+                        </div>
+                    </div>
+                    <div class="item-team-index-pro20 ">
+                        <div>
+                            <img src="img-pro20/fondo-nosotros.svg" class="fondoitemteam-index-pro20" alt="">
+                        </div>
+                        <img class="img-circular plomeado" src="team-img/Jhordyn-montenegro.jpg" width="170px"
+                            height="170px" alt="">
+                        <div class="cuerpoitem-team-index-pro20">
+                            <span class="nombre-team-index-pro20">Jhordyn Montenegro</span> <br>
+                            <span class="cargo-team-index-pro20">Desarrollador</span>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+
+        </section>
+        <section class="seccion-datos-index-pro20">
+            <div class="difuminado">
+                <div class="titulo-datos-index-pro20">Datos</div>
+                <div class="cuerpo-datos-index-pro20">
+                    <div class="itemcuerpo-datos-index-pro20">
+
+                        <div><img src="img-pro20/Asset 7.svg" height="60px" width="60px" alt=""></div>
+                        <div class="txtdescripcion-datos-index-pro20">Fundada en <span
+                                class="txtbold-datos-index-pro20">2009</span>(13 años)</div>
+                    </div>
+                    <div class="itemcuerpo-datos-index-pro20">
+                        <div><img src="img-pro20/Asset 6.svg" height="60px" width="60px" alt=""></div>
+                        <div class="txtdescripcion-datos-index-pro20">Más de <span class="txtbold-datos-index-pro20">180
+                                proyectos</span>trabajados</div>
+                    </div>
+                    <div class="itemcuerpo-datos-index-pro20">
+                        <div><img src="img-pro20/Asset 5.svg" height="60px" width="60px" alt=""></div>
+                        <div class="txtdescripcion-datos-index-pro20">Más de <span class="txtbold-datos-index-pro20">30
+                                clientes</span>atendidos</div>
+                    </div>
+
+
+                </div>
+                <!--
+                <div class="centrado">
+                    <div class="txtsubdescripcion-datos-index-pro20"><span>Lorem ipsum dolor sit amet consectetur
+                            adipisicing elit.
+                            Sapiente
+                            voluptatibus aliquid</span></div>
+                </div>
+                -->
+            </div>
+        </section>
+        <section class="seccion-confian-index-pro20">
+            <div class="centrado">
+                <div class="titulo-confian-index-pro20">Ellos <span class="txtbold-confian-index-pro20"> confían</span>
+                    en
+                    nosotros</div>
+                <span class="txtdescripcion-confian-index-pro20">Lorem Ipsum is simply dummy text</span>
+            </div>
+            <div class="logos-confian-index-pro20">
+                <div class="divlogoconfian" v-for="(lstconfian, index) in logos_confian" :key="index">
+                    <img :src="lstconfian.foto" class="imglogos-confian-index-pro20" alt="">
+                </div>
+
+
+            </div>
+
+        </section>
+        <section class="seccion-contacto-index-pro20" id="contactanos-index-pro20">
+            <div class="centrado">
+                <div class="titulo-contacto-index-pro20">Ponte en
+                    <strong>contacto</strong>
+                </div>
+                <div style="margin-top: 32px; font-family: MontserratM;">Dirección: Av. Benavides 1944, Miraflores,
+                    Lima,
+                    Lima, Perú</div>
+                <div style="font-family: MontserratM;">Correo: contacto@pro20.pe</div>
+            </div>
+        </section>
+        <section class="seccion-leemos-index-pro20">
+            <div class="contenedorleemos">
+                <form action="enviomail.php" method="POST">
+                    <div class="espaciado10" style="padding-top: 50px; font-size: 20px;"> <strong> Te leemos</strong>
+                    </div>
+
+                    <div class="espaciado10">Nombres y apellidos:</div>
+                    <div> <input type="text" class="txtinput" name="nombre" id="nombre"></div>
+                    <div class="espaciado10">Teléfono:</div>
+                    <div> <input type="text" class="txtinput" name="telefono" id="telefono"></div>
+                    <div class="espaciado10">Correo electrónico:</div>
+                    <div> <input type="text" class="txtinput" name="correo" id="correo"></div>
+                    <div class="espaciado10">Mensaje:</div>
+                    <div> <textarea class="txtarea" name="mensaje" id="mensaje" rows="10" cols="55"></textarea></div>
+                    <div class="condiciones-leemos-index-pro20">
+                        <input type="checkbox" name="" id="">
+                        <div style="margin-left: 10px;"> He leido y acepto de manera expresa los
+                            <a href="#">Términos y condiciones</a> y la <a href="#">Política de Privacidad</a>
+                        </div>
+                    </div>
+                    <div class="condiciones-leemos-index-pro20">
+                        <input type="checkbox" name="" id="">
+                        <div style="margin-left: 10px;"> Autorizo el uso de mis datos para
+                            <a href="#">fines adicionales</a>
+                        </div>
+                    </div>
+                    <div class="btnEnviar-leemos-index-pro20"> <button class="btnEnviar-leemos-index-pro20"
+                            type="submit">Enviar</button> </div>
+                </form>
+            </div>
+        </section>
+        <footer class="footer-index-pro20">
+            <strong>.PRO20</strong> - Todos los derechos reservados
+        </footer>
+    </div>
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+
+<script src="main.js"></script>
+
+</html>
+<style scoped>
+    @font-face {
+        font-family: MontserratB;
+        src: url(font/Montserrat-Bold.ttf);
+    }
+
+    @font-face {
+        font-family: MontserratL;
+        src: url(font/Montserrat-Light.ttf);
+    }
+
+    @font-face {
+        font-family: MontserratM;
+        src: url(font/Montserrat-Medium.ttf);
+    }
+
+    @font-face {
+        font-family: MontserratR;
+        src: url(font/Montserrat-Regular.ttf);
+    }
+
+    @font-face {
+        font-family: Bebas;
+        src: url(font/BebasNeue-Regular.ttf);
+    }
+
+    @font-face {
+        font-family: RobotoR;
+        src: url(font/Roboto-Regular.ttf);
+    }
+
+
+    * {
+        text-decoration: none;
+        list-style: none;
+    }
+
+.mostrarflex{
+    display: flex !important;
+}
+.mostrarbb{
+    visibility: visible;
+}
+.ocultarbb{
+  visibility: hidden;
+}
+
+    .icono-salir {
+        display: none;
+    }
+
+    .icono-menu {
+        display: none;
+    }
+
+    #app {
+        width: 100%;
+        height: 100%;
+    }
+
+    .gridslider-valores-index-pro20 {
+        display: grid;
+        grid-template-columns: auto;
+        width: 100%;
+
+
+    }
+
+    .titulo-valorslider-index-pro20 {
+        width: 100%;
+        font-family: MontserratM;
+        text-align: center;
+        font-size: 30px;
+        padding-top: 20px;
+    }
+
+    .text1slider-valores-index-pro20 {
+        margin-top: 20px;
+        font-size: 24px;
+        text-align: right;
+        margin-left: 100px;
+        margin-right: 50px;
+        font-family: MontserratM;
+    }
+
+
+
+
+
+
+
+    html,
+    body {
+        color: white;
+        height: 100%;
+        width: 100%;
+        margin: 0px;
+    }
+
+    .pantalla-principal-index-pro20 {
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(180deg, #02000a, #08031c, #0E0350, #0E0350) no-repeat center center fixed;
+        padding-top: 70px;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+
+    }
+
+    header {
+
+        width: 100%;
+        margin: auto;
+        position: fixed;
+        z-index: 9999;
+
+
+    }
+
+    .icono-menu {
+        display: none;
+    }
+
+    nav {
+
+        width: 100%;
+
+        font-family: MontserratR;
+        align-items: center;
+        display: flex;
+        justify-content: space-between;
+        /*   padding: 10px; */
+        background: #09041e;
+        border-bottom: 2px solid #060021;
+    }
+
+    .logo-index-pro20 {
+        margin-left: 20px;
+    }
+
+    nav ul {
+        align-items: center;
+        display: flex;
+        column-gap: 25px;
+        padding-right: 40px;
+    }
+
+    nav ul a {
+        color: #fff;
+        transition: all 5.2s ease;
+    }
+
+    .linea {
+        content: '';
+        display: block;
+        position: relative;
+        width: 20px;
+        border: 2px solid transparent;
+        margin: auto;
+    }
+
+    .linea-activa {
+        background: #F21170;
+    }
+
+    #icono-linkedin-pro20 {
+        display: inline-block;
+        width: 15px;
+        height: 15px;
+        background: url(img-pro20/icon-linkedin.svg);
+    }
+
+    #icono-facebook-pro20 {
+        display: inline-block;
+        width: 15px;
+        height: 15px;
+        background: url(img-pro20/icono-facebook.svg);
+    }
+
+    #icono-twiter-pro20 {
+        display: inline-block;
+        width: 15px;
+        height: 15px;
+        background: url(img-pro20/icono-twiter.svg);
+    }
+
+    .gridlineas-index-pro20 {
+        display: grid;
+        grid-template-columns: 25% 25% 25% 25%;
+    }
+
+    .linea-index-pro20 {
+        position: absolute;
+
+        width: 100%;
+        height: 100%;
+        z-index: 1;
+        border: 4px solid #1C0098;
+        margin-left: 5px;
+        margin-top: 1px;
+    }
+
+    .linea-encendida {
+        border-color: #194AFB;
+    }
+
+    .itemlineas-index-pro20 {
+        position: relative;
+        margin-top: 20px;
+        margin-left: auto;
+        margin-right: auto;
+
+    }
+
+    .card-lineas-index-pro20 {
+        z-index: 1;
+        position: relative;
+        margin: 0 auto;
+        background: #09041e;
+        box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.377);
+        border-radius: 5px;
+        height: 580px;
+        width: 300px;
+    }
+
+    .plomeado:hover {
+
+        filter: grayscale(0);
+
+    }
+
+
+    .card-header {
+
+        text-align: center;
+    }
+
+    .card-header img {
+        height: 384px;
+        width: 100%;
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
+    }
+
+    .circulo-rosa-index-pro20 {
+        height: 5px;
+        width: 5px;
+        border-radius: 10px;
+        background: #BF0D5F;
+    }
+
+    .card-body {
+        width: 240px;
+        margin-left: 20px;
+    }
+
+    .card-body-title {
+        margin-top: 20px;
+        display: flex;
+        align-items: center;
+
+        height: 50px;
+    }
+
+    .card-body-title h4 {
+        padding-left: 5px;
+        color: #fff;
+        font-size: 22px;
+        font-family: MontserratB;
+        text-align: left;
+    }
+
+    .card-body-text {
+        align-items: center;
+        display: flex;
+    }
+
+    .card-body-text p {
+        padding: 20px;
+        font-size: 16px;
+        color: #777777;
+        text-align: center;
+    }
+
+    .card-body-text a {
+        width: 100%;
+        text-align: right;
+        padding-right: 20px;
+    }
+
+    #icono-derecha {
+        display: inline-block;
+        width: 25px;
+        height: 25px;
+        background: url(icono-derecha.svg);
+    }
+
+    .seccion-nosotros-index-pro20 {
+        /*   background: url(fondo-nosotros.svg); */
+        width: 100%;
+        height: 600px;
+    }
+
+    .banner-nosotros-index-pro20 {
+        padding-top: 70px;
+    }
+
+    .textnosotros-titulo-index-pro20 {
+        font-family: MontserratB;
+        font-weight: bold;
+        font-size: 40px;
+        color: #F21170;
+        text-align: center;
+    }
+
+    .textnosotros-descripcion-index-pro20 {
+        font-family: Bebas;
+        font-weight: bold;
+        margin-top: 100px;
+        margin-left: 300px;
+        margin-right: 300px;
+        font-size: 48px;
+        color: #09041e;
+        text-align: center;
+        letter-spacing: 1px;
+    }
+
+    .seccion-valores-index-pro20 {
+        background: #0E0350;
+        width: 100%;
+        height: 680px;
+    }
+
+    .gridvalores-index-pro20 {
+        display: grid;
+        grid-template-columns: 50% 50%;
+    }
+
+    .itemvalores-index-pro20 {
+        padding: 50px;
+        margin-left: 50px;
+    }
+
+    .textnuestros-index-pro20 {
+        font-family: MontserratR;
+        margin-top: 150px;
+        font-size: 28px;
+    }
+
+    .textvalores-index-pro20 {
+        font-family: MontserratB;
+        font-weight: bold;
+        font-size: 48px;
+        margin-top: 10px;
+    }
+
+    .textvalores-descripcion-index-pro20 {
+        font-family: MontserratL;
+        font-size: 18px;
+        margin-top: 15px;
+        width: 450px;
+    }
+
+    .banner-valores-index-pro20 {
+        border-radius: 10px;
+        width: 100%;
+        height: 500px;
+        background: #2352FB;
+    }
+
+    .slider {
+        text-align: right;
+        overflow: hidden;
+    }
+
+    .slides {
+        display: flex;
+        overflow-x: hidden;
+
+        scroll-behavior: smooth;
+        scroll-snap-type: x mandatory;
+
+    }
+
+    .slides>div {
+        scroll-snap-align: start;
+        flex: 0 0 100%;
+
+        margin-right: 50px;
+        border-radius: 10px;
+
+        transform-origin: center center;
+        transform: scale(1);
+        transition: transform 0.5s;
+        position: relative;
+        width: 100%;
+        height: 500px;
+        background: #2352FB;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    .itemslider-index-pro20 {
+        text-align: right;
+        margin-top: 20px;
+        margin-right: 20px;
+    }
+
+    .itemslider-index-pro20 a {
+        display: inline-flex;
+        width: 60px;
+        height: 4px;
+        background: #1C0098;
+        text-decoration: none;
+        align-items: center;
+        justify-content: center;
+        /* border-radius: 50%; */
+        /* margin: 0 0 0.5rem 0; */
+        position: relative;
+        margin-right: 10px;
+    }
+
+    .marcadoslider {
+        background: #4B71FC !important;
+    }
+
+    .seccion-valores-index-pro20 {
+        width: 100%;
+        height: 600px;
+    }
+
+    .grupoimg-txt-valores-index-pro20 {
+        text-align: left;
+        display: flex;
+        align-items: center;
+    }
+
+    .titulo-centrado {
+        font-family: MontserratR;
+        font-size: 26px;
+        width: 100%;
+        text-align: center;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .fondoitemteam-index-pro20 {
+        position: absolute;
+        height: 235px;
+        width: 200px;
+        margin-top: -10px;
+        margin-left: -80px;
+    }
+
+    .nombre-team-index-pro20 {
+        font-size: 18px;
+        font-family: MontserratM;
+        color: #060021;
+    }
+
+    .cargo-team-index-pro20 {
+        font-size: 16px;
+        font-family: MontserratL;
+        color: #F21170;
+    }
+
+    .subgrupo1-team-index-pro20 {
+        margin-left: 30px;
+        display: grid;
+        grid-template-columns: auto auto auto auto;
+
+    }
+
+    .subgrupo2-team-index-pro20 {
+        margin-left: 200px;
+        margin-right: 200px;
+        display: grid;
+        grid-template-columns: auto auto auto;
+    }
+
+    .item-team-index-pro20 {
+        text-align: center;
+        padding-top: 20px;
+        border: 2px dashed #4B71FC;
+        width: 280px;
+        height: 290px;
+        margin-bottom: 40px;
+    }
+
+    .img-circular {
+        border-radius: 50%;
+    }
+
+    .plomeado {
+        filter: grayscale(1)
+    }
+
+
+    .cuerpoitem-team-index-pro20 {
+        padding-top: 28px;
+        width: 100%;
+        text-align: center;
+
+
+    }
+
+    .difuminado {
+        text-align: center;
+        opacity: 0.9;
+        width: 100%;
+        height: 450px;
+        background: #060021;
+
+    }
+
+    .seccion-datos-index-pro20 {
+
+        background-image: url(img-pro20/datos.jpg);
+        width: 100%;
+        height: 450px;
+    }
+
+    .cuerpo-datos-index-pro20 {
+        margin-left: 36%;
+        margin-top: 50px;
+    }
+
+    .titulo-datos-index-pro20 {
+        font-size: 28px;
+        font-family: MontserratR;
+        padding-top: 50px;
+    }
+
+    .txtbold-datos-index-pro20 {
+        color: #F65197;
+        font-weight: bold;
+        font-family: MontserratB;
+    }
+
+    .txtdescripcion-datos-index-pro20 {
+        font-size: 18px;
+        font-family: MontserratM;
+        color: #FFFFFF;
+        margin-left: 15px;
+    }
+
+    .txtsubdescripcion-datos-index-pro20 {
+        font-size: 13px;
+        font-family: MontserratL;
+        width: 300px;
+        margin: auto;
+    }
+
+    .itemcuerpo-datos-index-pro20 {
+        display: flex;
+        align-items: center;
+        margin-bottom: 20px;
+
+    }
+
+    .centrado {
+        width: 100%;
+        text-align: center;
+    }
+
+    .seccion-confian-index-pro20 {
+        width: 100%;
+        text-align: center;
+        height: 300px;
+        background-color: #194AFB;
+        color: #FFFFFF;
+    }
+
+    .titulo-confian-index-pro20 {
+        font-family: MontserratR;
+        font-size: 32px;
+        padding-top: 50px;
+    }
+
+    .txtbold-confian-index-pro20 {
+        color: #fff;
+        font-weight: bold;
+        font-family: MontserratB !important;
+    }
+
+    .txtdescripcion-confian-index-pro20 {
+        font-family: MontserratL;
+        color: #9FB3FD !important;
+        font-size: 18px;
+    }
+
+    .logos-confian-index-pro20 {
+        justify-content: center;
+        display: grid;
+        grid-template-columns: auto auto auto auto auto auto auto;
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
+        margin-top: 50px;
+
+    }
+
+    .divlogoconfian {
+        width: 150px;
+        height: 60px;
+    }
+
+    .imglogos-confian-index-pro20 {
+
+        width: 100%;
+        height: 100%;
+    }
+
+    .seccion-contacto-index-pro20 {
+        width: 100%;
+        text-align: center;
+        height: 200px;
+        color: #505050;
+    }
+
+    .titulo-contacto-index-pro20 {
+        font-family: MontserratR;
+        color: #F21170 !important;
+        padding-top: 50px;
+        font-size: 28px;
+    }
+
+    .seccion-leemos-index-pro20 {
+        background: #F4F4F4;
+        width: 100%;
+        height: 650px;
+        color: #333333;
+    }
+
+    .contenedorleemos {
+        font-family: MontserratM;
+        width: 450px;
+        margin: auto;
+    }
+
+    .espaciado10 {
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    .txtarea {
+        width: 100%;
+        border-radius: 5px;
+        border: 1px solid #DDDDDD;
+    }
+
+    .txtinput {
+        border-radius: 5px;
+        width: 100%;
+        height: 30px;
+        border: 1px solid #DDDDDD;
+    }
+
+    .condiciones-leemos-index-pro20 {
+        font-size: 13px;
+        font-family: RobotoR !important;
+        margin-bottom: 10px;
+        margin-top: 10px;
+        display: flex;
+    }
+
+    .btnEnviar-leemos-index-pro20 {
+        border: none;
+        color: white;
+        margin: auto;
+        width: 100px;
+        background: #F21170;
+        text-align: center;
+        color: #fff;
+        padding: 5px;
+        border-radius: 5px;
+    }
+
+    .btnEnviar-leemos-index-pro20:hover {
+        cursor: pointer;
+        background: #aa0c4e;
+    }
+
+    .footer-index-pro20 {
+        font-family: RobotoR !important;
+        background: #0F0354;
+        font-size: 13px;
+        text-align: center;
+        padding: 10px;
+    }
+
+    @supports (-webkit-mask: url("")) or (mask: url("")) {
+        #icono-linkedin-pro20 {
+            -webkit-mask: url(img-pro20/icono-linkedin.svg);
+            background: #2f9fff;
+        }
+
+        #icono-facebook-pro20 {
+            -webkit-mask: url(img-pro20/icono-facebook.svg);
+            background: #2f9fff;
+        }
+
+        #icono-twiter-pro20 {
+            -webkit-mask: url(img-pro20/icono-twiter.svg);
+            background: #2f9fff;
+        }
+
+        #icono-derecha {
+            -webkit-mask: url(img-pro20/icono-derecha.svg);
+            background: white;
+            font-weight: bold;
+        }
+
+        #icono-menu {
+            -webkit-mask: url(img-pro20/icono-menu.svg);
+            background: white;
+            font-weight: bold;
+        }
+    }
+
+
+
+    @media only screen and (max-device-width: 766px) {
+        .card-body {
+            margin-left: 5px;
+        }
+
+        #divMenu {
+            display: none;
+        }
+
+        .icono-menu {
+            display: block;
+            width: 45px;
+            height: 45px;
+            cursor: pointer;
+        }
+
+        .img-logo {
+            margin-left: 60px;
+        }
+
+        nav {
+            display: block;
+        }
+
+        nav ul {
+            display: block;
+            text-align: center;
+            padding-left: 0px;
+            padding-right: 0px;
+
+        }
+
+        nav ul li {
+            padding-top: 5px;
+            padding-bottom: 5px;
+        }
+
+        .logo-index-pro20 {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            text-align: center;
+            margin-left: 0px;
+        }
+
+        .pantalla-principal-index-pro20 {
+            padding-bottom: 30px;
+            height: auto;
+        }
+
+        .gridlineas-index-pro20 {
+            grid-template-columns: auto;
+        }
+
+        .itemlineas-index-pro20 {
+
+            margin-left: auto;
+            margin-right: auto;
+
+        }
+
+        .card-lineas-index-pro20 {
+            width: 255px;
+            height: 410px;
+        }
+
+        .card-header img {
+            height: 250px;
+        }
+
+        .card-body-text p {
+            padding: 0px;
+            padding-left: 20px;
+        }
+
+        .seccion-nosotros-index-pro20 {
+            height: auto;
+            padding-bottom: 50px;
+        }
+
+        .img-none {
+            display: none;
+        }
+
+        .img-movil-nosotros img {
+            display: block;
+            margin-top: 100px;
+            width: 300px !important;
+            height: 300px !important;
+        }
+
+        .banner-nosotros-index-pro20 {
+            margin-top: 0px;
+        }
+
+        .textnosotros-descripcion-index-pro20 {
+            margin-left: 0px;
+            margin-right: 0px;
+            font-size: 30px;
+        }
+
+        .textvalores-descripcion-index-pro20 {
+            text-align: center;
+            width: 100%;
+        }
+
+        .seccion-valores-index-pro20 {
+            height: auto;
+        }
+
+        .gridvalores-index-pro20 {
+            grid-template-columns: 100%;
+
+        }
+
+        .itemvalores-index-pro20 {
+            margin-left: 0px;
+            padding: 10px;
+        }
+
+        .textnuestros-index-pro20 {
+            text-align: center;
+            margin-top: 40px;
+        }
+
+        .textvalores-index-pro20 {
+            text-align: center;
+        }
+
+        .text1slider-valores-index-pro20 {
+            margin-top: 20px;
+            font-size: 14px;
+            text-align: left;
+            margin-left: 0px;
+            margin-right: 0px;
+            font-family: MontserratM;
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+
+        .gridslider-valores-index-pro20 div {
+            margin-bottom: 20px;
+            text-align: center !important;
+        }
+
+        .slides>div {
+            margin-top: 15px;
+            margin-right: 18px;
+            width: 95%;
+            height: auto;
+            padding-top: 20px;
+            padding-bottom: 20px;
+        }
+
+        .grupoimg-txt-valores-index-pro20 {
+            display: block;
+        }
+
+        .itemslider-index-pro20 {
+            width: 100%;
+            margin-top: 20px;
+            /* margin-right: 20px; */
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .item-team-index-pro20 {
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .subgrupo1-team-index-pro20 {
+            grid-template-columns: auto;
+            margin-left: 0px;
+        }
+
+        .subgrupo2-team-index-pro20 {
+            grid-template-columns: auto;
+            margin-left: 0px;
+            margin-right: 0px;
+            margin-left: 0px;
+        }
+
+        .cuerpo-datos-index-pro20 {
+            align-items: center;
+            margin-left: 0%;
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+
+        .txtsubdescripcion-datos-index-pro20 {
+            font-size: 10px;
+            margin-top: 20px;
+        }
+
+        .seccion-datos-index-pro20 {
+            height: auto;
+
+        }
+
+        .difuminado {
+            height: auto;
+            padding-bottom: 20px;
+        }
+
+        .seccion-confian-index-pro20 {
+            height: auto;
+            padding-bottom: 20px;
+        }
+
+        .txtdescripcion-confian-index-pro20 {
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+
+        .logos-confian-index-pro20 {
+            justify-items: center;
+            width: 100%;
+            margin-top: 20px;
+            text-align: center;
+            display: grid;
+            grid-template-columns: auto auto;
+        }
+
+        .logos-confian-index-pro20 img {
+
+            text-align: center;
+        }
+
+        .divlogoconfian {
+            width: 100px;
+            height: 45px;
+        }
+
+        .contenedorleemos {
+            margin-left: 20px;
+            width: 90%;
+        }
+
+        .txtinput {
+            width: 90%;
+        }
+
+        .txtarea {
+            width: 90%;
+        }
+
+        .condiciones-leemos-index-pro20 div {
+            width: 85%;
+        }
+
+
+
+
+
+
+
+
+
+    }
+
+    @media only screen and (min-width: 768px) and (max-device-width: 768px) {
+        .btnMenu {
+            display: none;
+        }
+
+        .btnSalir {
+            display: none;
+        }
+
+        .itemlineas-index-pro20 {
+
+            margin-left: 5px;
+            margin-right: 5px;
+        }
+
+        .card-lineas-index-pro20 {
+            width: 180px !important;
+            height: 375px !important;
+
+        }
+
+        .linea-index-pro20 {
+
+            width: 94% !important;
+            margin-left: 9px !important;
+
+        }
+
+        .card-body-title h4 {
+            font-size: 15px;
+        }
+
+        .card-body {
+            width: 180px;
+            margin-left: 0px;
+        }
+
+        .logos-confian-index-pro20 {
+            grid-template-columns: auto auto auto auto;
+        }
+
+    }
+
+    @media only screen and (min-width: 768px) and (max-device-width: 1024px) {
+        .icono-menu {
+            display: none !important;
+        }
+
+        .icono-salir {
+            display: none !important;
+        }
+
+        #divMenu {
+            align-items: center;
+            display: flex !important;
+            column-gap: 23px;
+            padding-right: 40px;
+            font-size: 14px;
+        }
+
+        .img-movil-nosotros {
+            display: none;
+        }
+
+        .pantalla-principal-index-pro20 {
+            width: 100%;
+            height: auto;
+            padding-bottom: 40px;
+        }
+
+        .gridlineas-index-pro20 {
+            padding-bottom: 40px;
+            overflow: hidden;
+            grid-template-columns: 25% 25% 25% 25%;
+        }
+
+        .card-lineas-index-pro20 {
+            width: 200px;
+            height: 380px;
+        }
+
+        .card-body {
+            width: 185px;
+
+        }
+
+        .card-body-title h4 {
+            font-size: 18px;
+        }
+
+        .linea-index-pro20 {
+            position: absolute;
+            width: 92%;
+            height: 100%;
+            z-index: 1;
+            border: 4px solid #1C0098;
+            margin-left: 18px;
+            margin-top: 4px;
+        }
+
+        .card-header img {
+            height: 250px;
+            text-align: center;
+        }
+
+        .card-body-text p {
+            padding: 0px;
+            padding-left: 5px;
+            font-size: 14px;
+        }
+
+        .card-body-text a {
+            padding-right: 10px;
+        }
+
+        .subgrupo1-team-index-pro20 {
+            justify-content: space-around;
+            margin-left: auto;
+            margin-right: auto;
+            grid-template-columns: auto auto;
+        }
+
+        .subgrupo2-team-index-pro20 {
+            justify-content: space-around;
+            grid-template-columns: auto auto;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .textnosotros-descripcion-index-pro20 {
+            margin-left: 150px;
+            margin-right: 150px;
+        }
+
+        .itemvalores-index-pro20 {
+            margin-left: 20px;
+            padding: 0px;
+        }
+
+        .textvalores-descripcion-index-pro20 {
+            width: 100%;
+        }
+
+        .gridvalores-index-pro20 {
+            grid-template-columns: 40% 60%;
+        }
+
+        .slides>div {
+            width: 95%;
+            height: auto;
+            margin-top: 30px;
+        }
+
+        .text1slider-valores-index-pro20 {
+            margin-right: 30px;
+        }
+    }
+</style>
+<script>
+
+
+    $('#itemLinea1').on('mouseover', '#card-body1', function () {
+
+        $('#idLinea1').removeClass('plomeado')
+        $('#linea1-fondo').addClass('linea-encendida')
+    });
+    $('#itemLinea2').on('mouseover', '#card-body2', function () {
+
+        $('#idLinea2').removeClass('plomeado')
+    });
+    $('#itemLinea3').on('mouseover', '#card-body3', function () {
+
+        $('#idLinea3').removeClass('plomeado')
+    });
+    $('#itemLinea4').on('mouseover', '#card-body4', function () {
+
+        $('#idLinea4').removeClass('plomeado')
+    });
+
+    $('#itemLinea1').on('mouseout', '#card-body1', function () {
+
+        $('#idLinea1').addClass('plomeado')
+        $('#linea1-fondo').removeClass('linea-encendida')
+    });
+    $('#itemLinea2').on('mouseout', '#card-body2', function () {
+
+        $('#idLinea2').addClass('plomeado')
+    });
+    $('#itemLinea3').on('mouseout', '#card-body3', function () {
+
+        $('#idLinea3').addClass('plomeado')
+    });
+    $('#itemLinea4').on('mouseout', '#card-body4', function () {
+
+        $('#idLinea4').addClass('plomeado')
+    });
+
+    $(document).ready(function(){
+function mostrar(el, time,infi=false) {
+    let p = $(el);
+    let i = 0;
+  
+    let interval = setInterval(() => {
+
+      
+        if (i != 0) $(p[i-1]).hide();
+       
+        if (i == p.length) {
+           
+              i=0;
+       
+             if(!infi) clearInterval(interval)
+        }
+       
+        $(p[i]).show("slow");
+       
+        i++;
+    }, time)
+}
+mostrar('#idslider div[id^="slide"]', 6000,true);
+});
+    /*
+    $(document).ready(function () {
+        function hideShowContainers() {
+
+            if ($('#slide1').hasClass('jsHideContainer')) {
+                $('#slide1').show(5000);
+                $('#slide1').hide(1000);
+                $('#slide1').removeClass('jsHideContainer');
+                $('#slide2').addClass('jsHideContainer');
+              
+            } else if ($('#slide2').hasClass('jsHideContainer')) {
+                $('#slide2').show(5000);
+                $('#slide2').hide(1000);
+                $('#slide2').removeClass('jsHideContainer');
+                $('#slide3').addClass('jsHideContainer');
+              
+            } else if ($('#slide3').hasClass('jsHideContainer')) {
+                $('#slide3').show(5000);
+                $('#slide3').hide(1000);
+                $('#slide3').removeClass('jsHideContainer');
+                $('#slide4').addClass('jsHideContainer');
+              
+            } else if ($('#slide4').hasClass('jsHideContainer')) {
+                $('#slide4').show(5000);
+                $('#slide4').hide(1000);
+                $('#slide4').removeClass('jsHideContainer');
+             $('#slide1').addClass('mostrarflex');
+                $('#slide2').addClass('mostrarflex');
+                $('#slide3').addClass('mostrarflex');
+                $('#slide4').addClass('mostrarflex');
+                $('#slide1').addClass('jsHideContainer');
+
+            }
+
+        }
+        //Ejecutamos la función para que evalue los condicionales cada 5 segundos
+        setInterval(hideShowContainers, 5000,true);
+    });
+*/
+
+    var sections = $('section')
+        , nav = $('nav')
+        , nav_height = nav.outerHeight();
+
+
+
+    nav.find('a').on('click', function () {
+        var $el = $(this)
+            , id = $el.attr('href');
+
+        $('html, body').animate({
+            scrollTop: $(id).offset().top - nav_height
+        }, 2000);
+
+        return false;
+    });
+</script>

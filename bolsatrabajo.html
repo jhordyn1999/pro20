@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabaja con nosotros</title>
+</head>
+
+<body>
+    <div id="app">
+        <header>
+            <nav>
+                <div class="logo-index-pro20">
+                    <img src="img-pro20/icono-salir.svg" @click="changueMenuSalir()" id="btnSalir" width="35px"
+                        height="35px" alt="">
+                    <img src="img-pro20/icono-menu.svg" @click="changueMenu()" id="btnMenu" class="icono-menu" alt="">
+
+                    <a href="#"><img src="img-pro20/PRO20.svg" class="img-logo" height="25px" width="100px" alt=""> </a>
+                </div>
+                <ul id="divMenu">
+                    <li><a href="index.html">Lineas de negocio</a></li>
+                    <li><a href="index.html">Nosotros</a></li>
+                    <li><a href="#">Trabaja con nosotros <span id="idTrabaja" class="linea linea-activa"></span></a>
+                    </li>
+                    <li><a href="index.html">Contáctanos</a></li>
+                    <li><a href="#">
+                            <div id="icono-linkedin-pro20"></div>
+                        </a>
+                        <a href="">
+                            <div id="icono-facebook-pro20"></div>
+                        </a>
+                        <a href="">
+                            <div id="icono-twiter-pro20"></div>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <div class="contenedortitulo-trabajo-pro20">
+            <div class="titulo-trabajo-pro20">Trabaja con <strong>nosotros</strong></div>
+            <div class="subtitulo-trabajo-pro20">Adjunta tu cv y postula a uno de los mejores puestos de trabajo que
+                tenemos.
+            </div>
+        </div>
+        <div class="gridempleos-trabajo-pro20">
+            <div v-for="(lstempleo, index) in listado_trabajos" :key="index">
+                <form action="enviocv.php" method="POST" enctype="multipart/form-data">
+                    <div class="itemempleo-trabajo-pro20">
+                        <div class="centrado-div">
+                            <div class="linea-trabajo-pro20"></div>
+                            <img :src="lstempleo.foto" width="256px" height="256px" alt="">
+                        </div>
+                        <div class="cuerpoempleo-trabajo-pro20">
+                            <div class="tituloempleo-trabajo-pro20">
+                                <input type="text" id="idempleo" hidden name="idempleo" :value="lstempleo.nombre">
+                                <label for="">{{lstempleo.nombre}}</label>
+                            </div>
+                            <div class="descripcionempleo-trabajo-pro20">
+                                <div class="txtdescripcion">Descripción</div> <br>
+                                {{lstempleo.descripcion}}
+                            </div>
+                            <div class="timepublicacion-trabajo-pro20"><span>{{lstempleo.time}}</span></div>
+                            <div class="grupobotones-trabajo-pro20">
+
+
+                                <label for="file-picker" id="idfile" @click="changueFile()"
+                                    class="btnajuntar file-picker">Adjuntar
+                                    CV</label>
+                                <input id="file-picker" name="file-picker" type="file">
+                                <button type="submit" class="btnpostular">Postular</button>
+
+
+                            </div>
+
+
+                        </div>
+
+                    </div>
+                </form>
+                <div class="lineaitem-trabajo-pro20"> </div>
+            </div>
+
+
+
+        </div>
+        <footer class="footer-trabajo-pro20">
+            <strong>.PRO20</strong> - Todos los derechos reservados
+        </footer>
+    </div>
+
+</body>
+<script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+<script src="main.js"></script>
+
+</html>
+<style scoped>
+    @font-face {
+        font-family: MontserratB;
+        src: url(font/Montserrat-Bold.ttf);
+    }
+
+    @font-face {
+        font-family: MontserratL;
+        src: url(font/Montserrat-Light.ttf);
+    }
+
+    @font-face {
+        font-family: MontserratM;
+        src: url(font/Montserrat-Medium.ttf);
+    }
+
+    @font-face {
+        font-family: MontserratR;
+        src: url(font/Montserrat-Regular.ttf);
+    }
+
+    @font-face {
+        font-family: Bebas;
+        src: url(font/BebasNeue-Regular.ttf);
+    }
+
+    @font-face {
+        font-family: RobotoR;
+        src: url(font/Roboto-Regular.ttf);
+    }
+
+    * {
+        text-decoration: none;
+        list-style: none;
+    }
+
+    html,
+    body {
+
+        height: 100%;
+        width: 100%;
+        margin: 0px;
+    }
+
+    .file-picker+[type='file'] {
+        display: none;
+    }
+
+    #btnSalir {
+        display: none;
+    }
+
+    .icono-menu {
+        display: none;
+    }
+
+
+    header {
+        width: 100%;
+        margin: auto;
+        position: fixed;
+        z-index: 9999;
+
+    }
+
+    nav {
+        font-family: MontserratR;
+        align-items: center;
+        display: flex;
+        justify-content: space-between;
+        padding: 10px;
+        background: #09041e;
+    }
+
+    .logo-index-pro20 {
+        margin-left: 20px;
+    }
+
+    nav ul {
+        align-items: center;
+        display: flex;
+        column-gap: 25px;
+        padding-right: 40px;
+    }
+
+    nav ul a {
+        color: #fff;
+        transition: all 5.2s ease;
+    }
+
+    .linea {
+        content: '';
+        display: block;
+        position: relative;
+        width: 20px;
+        border: 2px solid transparent;
+        margin: auto;
+    }
+
+    .linea-activa {
+        background: #F21170;
+    }
+
+
+
+    #icono-linkedin-pro20 {
+        display: inline-block;
+        width: 15px;
+        height: 15px;
+        background: url(img-pro20/icon-linkedin.svg);
+    }
+
+    #icono-facebook-pro20 {
+        display: inline-block;
+        width: 15px;
+        height: 15px;
+        background: url(img-pro20/icono-facebook.svg);
+    }
+
+    #icono-twiter-pro20 {
+        display: inline-block;
+        width: 15px;
+        height: 15px;
+        background: url(img-pro20/icono-twiter.svg);
+    }
+
+    .contenedortitulo-trabajo-pro20 {
+        padding-top: 100px;
+        color: #fff;
+        text-align: center;
+        width: 100%;
+        height: 200px;
+        background: #194AFB;
+    }
+
+    .titulo-trabajo-pro20 {
+        font-family: MontserratR;
+        font-size: 28px;
+        padding-top: 50px;
+    }
+
+    .subtitulo-trabajo-pro20 {
+        font-family: MontserratL;
+        font-size: 18px;
+        padding-top: 30px;
+    }
+
+    .centrado-div {
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    .cuerpoempleo-trabajo-pro20 {
+        padding-left: 10px;
+    }
+
+    .gridempleos-trabajo-pro20 {
+
+        margin: auto;
+        width: 70%;
+        display: grid;
+        grid-template-columns: auto;
+    }
+
+    .itemempleo-trabajo-pro20 {
+        margin-top: 50px;
+        width: 100%;
+        display: grid;
+        grid-template-columns: 30% 70%;
+
+    }
+
+    .linea-trabajo-pro20 {
+        position: absolute;
+        width: 250px;
+        height: 250px;
+        z-index: 1;
+        border-color: #4B71FC;
+        border-right-style: solid;
+        border-bottom-style: solid;
+        border-width: 6px;
+        margin-left: 10px;
+        margin-top: 10px;
+    }
+
+    .tituloempleo-trabajo-pro20 {
+        font-family: MontserratB;
+        font-size: 24px;
+    }
+
+    .descripcionempleo-trabajo-pro20 {
+        font-family: RobotoR;
+        width: 400px;
+        margin-top: 20px;
+    }
+
+    .txtdescripcion {
+        font-family: MontserratM;
+        color: #194AFB;
+        font-size: 18px;
+    }
+
+    .timepublicacion-trabajo-pro20 {
+        font-family: RobotoR;
+        margin-top: 20px;
+        color: #888888;
+        font-size: 15px;
+        text-align: left;
+        width: 100%;
+    }
+
+    .grupobotones-trabajo-pro20 {
+        display: inline-flex;
+        margin-top: 20px;
+    }
+
+    .lineaitem-trabajo-pro20 {
+        width: 100%;
+        border: 1px solid #060021;
+        margin-top: 20px;
+    }
+
+    .btnajuntar {
+        cursor: pointer;
+        font-size: 17px;
+        font-family: RobotoR;
+        border-radius: 6px;
+        padding-right: 30px;
+        padding-left: 30px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        background: #DDDDDD;
+        color: #333333;
+
+
+    }
+
+    .btnajuntar:hover {
+        background: #b1b1b1;
+    }
+
+    .btnpostular {
+        cursor: pointer;
+        font-size: 17px;
+        margin-left: 20px;
+        font-family: RobotoR;
+        border-radius: 6px;
+        padding-right: 30px;
+        padding-left: 30px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        background: #194AFB;
+        color: #fff;
+        border: 1px solid #AAAAAA;
+
+    }
+
+    .btnpostular:hover {
+        background: #1339c0;
+    }
+
+    .footer-trabajo-pro20 {
+        font-family: RobotoR !important;
+        background: #0F0354;
+        font-size: 13px;
+        text-align: center;
+        padding: 10px;
+        color: #fff;
+    }
+
+    @supports (-webkit-mask: url("")) or (mask: url("")) {
+        #icono-linkedin-pro20 {
+            -webkit-mask: url(img-pro20/icono-linkedin.svg);
+            background: #2f9fff;
+        }
+
+        #icono-facebook-pro20 {
+            -webkit-mask: url(img-pro20/icono-facebook.svg);
+            background: #2f9fff;
+        }
+
+        #icono-twiter-pro20 {
+            -webkit-mask: url(img-pro20/icono-twiter.svg);
+            background: #2f9fff;
+        }
+
+        #icono-derecha {
+            -webkit-mask: url(img-pro20/icono-derecha.svg);
+            background: white;
+            font-weight: bold;
+        }
+    }
+
+    @media only screen and (max-device-width: 767px) {
+        nav {
+            display: block;
+        }
+
+        nav ul {
+            display: block;
+            text-align: center;
+            padding-left: 0px;
+            padding-right: 0px;
+
+        }
+
+        nav ul li {
+            padding-top: 5px;
+            padding-bottom: 5px;
+        }
+
+        #divMenu {
+            display: none;
+        }
+
+        .icono-menu {
+            display: block;
+            width: 45px;
+            height: 45px;
+            cursor: pointer;
+        }
+
+        .img-logo {
+            margin-left: 55px;
+        }
+
+        .logo-index-pro20 {
+            display: flex;
+            align-items: center;
+            text-align: center;
+            margin-left: 0px;
+        }
+
+        .subtitulo-trabajo-pro20 {
+            padding-left: 20px;
+            padding-right: 20px;
+            font-size: 16px;
+        }
+
+        .gridempleos-trabajo-pro20 {
+            width: 90%;
+        }
+
+        .itemempleo-trabajo-pro20 {
+            grid-template-columns: auto;
+        }
+
+        .tituloempleo-trabajo-pro20 {
+            margin-top: 20px;
+        }
+
+        .descripcionempleo-trabajo-pro20 {
+            width: 100%;
+            text-align: justify;
+        }
+
+        .grupobotones-trabajo-pro20 {
+            display: grid;
+            margin-left: auto;
+            margin-right: auto;
+            width: 100%;
+            grid-template-columns: 100%;
+            margin-top: 20px;
+        }
+
+        .btnajuntar {
+            font-size: 15px;
+            margin-bottom: 10px;
+            text-align: center;
+        }
+
+        .btnpostular {
+            font-size: 15px;
+            margin-left: 0px;
+        }
+    }
+
+    @media only screen and (min-width: 767px) and (max-device-width: 1024px) {
+        #btnMenu {
+            display: none !important;
+        }
+
+        #btnSalir {
+            display: none;
+        }
+
+        #divMenu {
+            align-items: center;
+            display: flex !important;
+            column-gap: 23px;
+            padding-right: 40px;
+            font-size: 14px;
+        }
+
+        nav ul {
+            column-gap: 12px;
+        }
+
+        .gridempleos-trabajo-pro20 {
+            width: 90%;
+        }
+
+        .itemempleo-trabajo-pro20 {
+            grid-template-columns: 40% 60%;
+        }
+    }
+</style>
