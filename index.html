@@ -67,7 +67,7 @@
                 </div>
                 <!-- ************ ITEM N°2 **************-->
                 <div class="itemlineas-index-pro20" id="itemLinea2">
-                    <div class="linea-index-pro20"></div>
+                    <div class="linea-index-pro20" id="linea2-fondo" ></div>
                     <div class="card-lineas-index-pro20">
                         <div class="card-header">
                             <img src="img-pro20/learning.PNG" id="idLinea2" class="plomeado" alt="">
@@ -88,7 +88,7 @@
                 </div>
                 <!-- ************ ITEM N°3 **************-->
                 <div class="itemlineas-index-pro20" id="itemLinea3">
-                    <div class="linea-index-pro20"></div>
+                    <div class="linea-index-pro20" id="linea3-fondo"></div>
                     <div class="card-lineas-index-pro20">
                         <div class="card-header">
                             <img src="img-pro20/desarrollo.PNG" id="idLinea3" class="plomeado" alt="">
@@ -109,7 +109,7 @@
                 </div>
                 <!-- ************ ITEM N°4 **************-->
                 <div class="itemlineas-index-pro20" id="itemLinea4">
-                    <div class="linea-index-pro20"></div>
+                    <div class="linea-index-pro20" id="linea4-fondo"></div>
                     <div class="card-lineas-index-pro20">
                         <div class="card-header">
                             <img src="img-pro20/marketing.PNG" id="idLinea4" class="plomeado" alt="">
@@ -1625,14 +1625,17 @@
     $('#itemLinea2').on('mouseover', '#card-body2', function () {
 
         $('#idLinea2').removeClass('plomeado')
+        $('#linea2-fondo').addClass('linea-encendida')
     });
     $('#itemLinea3').on('mouseover', '#card-body3', function () {
 
         $('#idLinea3').removeClass('plomeado')
+        $('#linea3-fondo').addClass('linea-encendida')
     });
     $('#itemLinea4').on('mouseover', '#card-body4', function () {
 
         $('#idLinea4').removeClass('plomeado')
+        $('#linea4-fondo').addClass('linea-encendida')
     });
 
     $('#itemLinea1').on('mouseout', '#card-body1', function () {
@@ -1643,14 +1646,17 @@
     $('#itemLinea2').on('mouseout', '#card-body2', function () {
 
         $('#idLinea2').addClass('plomeado')
+        $('#linea2-fondo').removeClass('linea-encendida')
     });
     $('#itemLinea3').on('mouseout', '#card-body3', function () {
 
         $('#idLinea3').addClass('plomeado')
+        $('#linea3-fondo').removeClass('linea-encendida')
     });
     $('#itemLinea4').on('mouseout', '#card-body4', function () {
 
         $('#idLinea4').addClass('plomeado')
+        $('#linea4-fondo').removeClass('linea-encendida')
     });
 
     $(document).ready(function(){
